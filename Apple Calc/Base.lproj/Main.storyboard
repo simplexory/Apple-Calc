@@ -361,7 +361,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="gon-lv-vbe" secondAttribute="height" multiplier="197:248" id="4uc-0e-CBe"/>
+                                    <constraint firstAttribute="width" secondItem="gon-lv-vbe" secondAttribute="height" multiplier="394:496" id="4uc-0e-CBe"/>
                                     <constraint firstAttribute="bottom" secondItem="sb2-GF-9A6" secondAttribute="bottom" id="7O6-xN-j6v"/>
                                     <constraint firstItem="2Ut-by-heS" firstAttribute="top" secondItem="Ll0-ir-H7G" secondAttribute="bottom" constant="8" symbolic="YES" id="AUS-Ky-LCD"/>
                                     <constraint firstItem="Ll0-ir-H7G" firstAttribute="top" secondItem="gon-lv-vbe" secondAttribute="top" id="B7N-5c-ouf"/>
