@@ -68,6 +68,7 @@ class DisplayViewController: UIViewController {
     
     @IBAction func numberButtonPressed(_ sender: UIButton) {
         if let digit = sender.titleLabel?.text {
+            if digit == "0" && displayValue == 0 { return }
             if userInTyping {
                 if let displayValue = displayLabel.text {
                     displayLabel.text = displayValue + digit

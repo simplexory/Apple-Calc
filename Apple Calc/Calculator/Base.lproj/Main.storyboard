@@ -388,8 +388,7 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="÷">
                                                             <attributes>
-                                                                <font key="NSFont" metaFont="system" size="40"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <font key="NSFont" metaFont="system" size="50"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -409,9 +408,7 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="×">
                                                             <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" metaFont="system" size="40"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <font key="NSFont" metaFont="system" size="50"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -431,9 +428,7 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="−">
                                                             <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" metaFont="system" size="40"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <font key="NSFont" metaFont="system" size="50"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -453,9 +448,7 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="+">
                                                             <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" metaFont="system" size="40"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <font key="NSFont" metaFont="system" size="50"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -475,8 +468,7 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="=">
                                                             <attributes>
-                                                                <font key="NSFont" metaFont="system" size="40"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <font key="NSFont" metaFont="system" size="50"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
