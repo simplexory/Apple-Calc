@@ -17,8 +17,8 @@ class DisplayViewController: UIViewController {
     
     var displayValue: Double {
         get  {
-            if let value = displayLabel.text  {
-                return Double(value)!
+            if let value = displayLabel.text {
+                return Double(formatFloatPointCharacter(value))!
             }
             
             return 0
@@ -30,7 +30,7 @@ class DisplayViewController: UIViewController {
                 value.removeLast(2)
             }
             
-            displayLabel.text = value
+            displayLabel.text = formatFloatPointCharacter(value)
         }
     }
     
@@ -52,7 +52,7 @@ class DisplayViewController: UIViewController {
     }
     
     @IBAction func decimalPressed() {
-            let decimal = "."
+            let decimal = ","
             if userInTyping {
                 if displayLabel.text != nil {
                     if !displayLabel.text!.contains(decimal) {
@@ -61,7 +61,7 @@ class DisplayViewController: UIViewController {
                 }
             }
             else {
-                displayLabel.text = "0."
+                displayLabel.text = "0,"
                 userInTyping = true
             }
         }
@@ -77,6 +77,18 @@ class DisplayViewController: UIViewController {
                 userInTyping = true
             }
         }
+    }
+    
+    private func formatFloatPointCharacter(_ value: String) -> String {
+        if value.contains(",") {
+            return value.replacingOccurrences(of: ",", with: ".")
+        }
+        
+        if value.contains(".") {
+            return value.replacingOccurrences(of: ".", with: ",")
+        }
+        
+        return value
     }
     
 }
