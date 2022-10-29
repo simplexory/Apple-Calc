@@ -13,16 +13,24 @@ class DisplayViewController: UIViewController {
     
     private let manager = CalcManager()
     private var userInTyping = false
+    private var floatPointIsSet = false
     
     var displayValue: Double {
         get  {
-            if let number = displayLabel.text  {
-                return Double(number)!
+            if let value = displayLabel.text  {
+                return Double(value)!
             }
+            
             return 0
         }
         set {
-            displayLabel.text = String(newValue)
+            var value = String(newValue)
+            
+            if value.suffix(2) == ".0" {
+                value.removeLast(2)
+            }
+            
+            displayLabel.text = value
         }
     }
     
@@ -42,6 +50,21 @@ class DisplayViewController: UIViewController {
             displayValue = result
         }
     }
+    
+    @IBAction func decimalPressed() {
+            let decimal = "."
+            if userInTyping {
+                if displayLabel.text != nil {
+                    if !displayLabel.text!.contains(decimal) {
+                        displayLabel.text = displayLabel.text! + decimal
+                    }
+                }
+            }
+            else {
+                displayLabel.text = "0."
+                userInTyping = true
+            }
+        }
     
     @IBAction func numberButtonPressed(_ sender: UIButton) {
         if let digit = sender.titleLabel?.text {
