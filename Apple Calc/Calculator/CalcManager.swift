@@ -42,6 +42,16 @@ class CalcManager {
         "AC" : Operation.clear
     ]
     
+    var result: Double? {
+        get { return accumulator }
+    }
+    
+    private func performPendingBinaryOperation() {
+        if pendingBinaryOperation != nil && accumulator != nil {
+            accumulator = pendingBinaryOperation!.perform(with: accumulator!)
+        }
+    }
+    
     func performOperation(_ symbol: String) {
         if let operation = operations[symbol] {
             switch operation {
@@ -62,18 +72,6 @@ class CalcManager {
                 pendingBinaryOperation = nil
                 accumulator = 0
             }
-        }
-    }
-    
-    func performPendingBinaryOperation() {
-        if pendingBinaryOperation != nil && accumulator != nil {
-            accumulator = pendingBinaryOperation!.perform(with: accumulator!)
-        }
-    }
-    
-    var result: Double? {
-        get {
-            return accumulator
         }
     }
     
