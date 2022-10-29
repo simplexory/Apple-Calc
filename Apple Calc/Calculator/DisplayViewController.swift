@@ -51,6 +51,21 @@ class DisplayViewController: UIViewController {
         }
     }
     
+    @IBAction func decimalPressed() {
+            let decimal = "."
+            if userInTyping {
+                if displayLabel.text != nil {
+                    if !displayLabel.text!.contains(decimal) {
+                        displayLabel.text = displayLabel.text! + decimal
+                    }
+                }
+            }
+            else {
+                displayLabel.text = "0."
+                userInTyping = true
+            }
+        }
+    
     @IBAction func numberButtonPressed(_ sender: UIButton) {
         if let digit = sender.titleLabel?.text {
             if userInTyping {
