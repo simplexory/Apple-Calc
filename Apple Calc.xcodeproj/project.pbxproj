@@ -57,14 +57,22 @@
 			isa = PBXGroup;
 			children = (
 				BB21941D29099E14000B4B0A /* AppDelegate.swift */,
-				BB21942129099E14000B4B0A /* DisplayViewController.swift */,
-				BB219431290AD539000B4B0A /* CalcManager.swift */,
-				BB21942329099E14000B4B0A /* Main.storyboard */,
+				BB83EDC0290D6DD000CAB08F /* Calculator */,
 				BB21942629099E17000B4B0A /* Assets.xcassets */,
 				BB21942829099E17000B4B0A /* LaunchScreen.storyboard */,
 				BB21942B29099E17000B4B0A /* Info.plist */,
 			);
 			path = "Apple Calc";
+			sourceTree = "<group>";
+		};
+		BB83EDC0290D6DD000CAB08F /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				BB21942129099E14000B4B0A /* DisplayViewController.swift */,
+				BB219431290AD539000B4B0A /* CalcManager.swift */,
+				BB21942329099E14000B4B0A /* Main.storyboard */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
